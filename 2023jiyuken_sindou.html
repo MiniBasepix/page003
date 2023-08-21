@@ -23,12 +23,58 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="js/setting.js"></script>
+    <style>
+        #video_1, #video_2, #video_3 {
+            padding-top: 60px;
+            margin-top:-60px;
+        }
+    </style>
     <!-- 印刷用css -->
     <link rel="stylesheet" href="css/print.css" media="print">
     <link rel="stylesheet" href="css/print-jiyukenkyu.css" media="print">
 </head>
 <body>
-    <iframe src="header.html" width="100%" height="66px" scrolling="no" frameborder="0" style="border: none"></iframe>
+    <header>
+        <h1 class="header_logo">
+            <a target="_parent" href="index.html">
+                自由研究2023
+            </a>
+        </h1>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <ul class="header-group">
+            <li class="header-item">
+                <p>
+                    <a target="_parent" href="2023jiyukenkyu.html">
+                    今回の自由研究
+                    </a>
+                </p>
+            </li>
+            <li class="header-item">
+                <p>
+                    <a target="_parent" href="pastjiyukenkyu.html">
+                    これまでの自由研究
+                    </a>
+                </p>
+            </li>
+            <li class="header-item">
+                <p>
+                    <a target="_parent" href="about.html">
+                        自由研究2023について
+                    </a>
+                </p>
+            </li>
+            <li class="header-item">
+                <p>
+                    <a target="_parent" href="sitesetting.html">
+                    サイト設定
+                    </a>
+                </p>
+            </li>
+        </ul>
+        </div>
+    </header>
     
     <div class="topimages">
         <h1>自由研究2023 - 振動でなぜ回る？</h1>
@@ -41,12 +87,16 @@
             未完成
         </p>
         <h2>映像</h2>
-        <h3 id="video_1">浄化槽ポンプ上の石回転(音量注意)</h3>
+        <h3 id="video_1">&#x24b6;浄化槽ポンプ</h3>
+        <p>音量注意</p>
         <video controls preload="auto" playsinline muted poster="video_images/move_ishi_image.png" src="videos/move_ishi.mp4"></video>
-        <h3 id="video_2">電動歯ブラシの回転(音量注意)</h3>
-        <video controls preload="auto" playsinline muted poster="video_images/move_haburashi_image.png" src="videos/move_haburashi.mp4"></video>
-        <h3 id="video_3">スマートフォン上の物の回転(バイブレーション)(音量・ノイズ注意)</h3>
+        <h3 id="video_2">&#x24b7;スマートフォン</h3>
+        <p>音量注意、低画質</p>
         <video controls preload="auto" playsinline muted poster="video_images/move_on-phone_image.png" src="videos/move_on-phone-block.mp4"></video>
+        <h3 id="video_3">&#x24b8;電動歯ブラシ</h3>
+        <p>音量注意</p>
+        <video controls preload="auto" playsinline muted poster="video_images/move_haburashi_image.png" src="videos/move_haburashi.mp4"></video>
+        <p>動画編集：Aviutl ver1.10<br>画像作成：CLIP STUDIO PAINT PRO ver1</p>
     </div>
   <footer class="footer">
     <div class="md-flex md-justify-between">
@@ -55,9 +105,9 @@
         <li><a href="https://minibasepix.github.io/jiyuken/">自由研究Pagesトップ</a></li>
         <li><a href="https://minibasepix.github.io/Page001/">自由研究2021</a></li>
         <li><a href="https://minibasepix.github.io/page002/">自由研究2022</a></li>
-        <li><a href="../2023jiyukenkyu.html">今回の自由研究</a></li>
+        <li><a href="2023jiyukenkyu.html">今回の自由研究</a></li>
         <li><a href="https://minibasepix.github.io/jiyuken/jpesm.html">サイトマップ</a></li>
-        <li><a href="">自由研究Pagesソースコード</a></li>
+        <li><a href="https://minibasepix.github.io/jiyukensc">自由研究Pagesソースコード</a></li>
       </ul>
     </div>
     <div class="footer-bottom">

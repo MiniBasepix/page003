@@ -16,7 +16,7 @@ p,b,s,ol {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -24,6 +24,12 @@ h1,h2,h3,h4,h5,h6 {
   margin: 15px 80px;
   padding-top: 0;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 1184px) {
+  .main {
+    margin: 15px 20px;
+  }
 }
 
 a {
@@ -312,6 +318,7 @@ small {
   height: 25em;
   color: white;
   text-align: center;
+  margin-top: 66px;
 }
 
 #swipers1 {
@@ -374,7 +381,7 @@ small {
   text-align: center;
   background: rgb(255, 255, 255);
   font-size: 20px;
-  margin-left: 15px;
+  margin: auto;
 }
 
 .slider-btn .btn-text{
@@ -473,6 +480,7 @@ small {
 
 .topimages{
   width: 100%;
+  margin-top: 66px;
   height: 7.5em;
   color: white;
   font-size: 2em;
@@ -480,6 +488,13 @@ small {
   font-weight: 300;
   padding-left: 100px;
   background: linear-gradient(90deg,#61b8ce 0%,#afdeec,#7fcc99 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .topimages {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .jiyuken03_fs {
