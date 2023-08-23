@@ -40,7 +40,7 @@
             <li class="header-item">
                 <p>
                     <a target="_parent" href="2023jiyukenkyu.html">
-                    今回の自由研究
+                    今年の自由研究
                     </a>
                 </p>
             </li>
@@ -54,7 +54,7 @@
             <li class="header-item">
                 <p>
                     <a target="_parent" href="about.html">
-                        自由研究2023について
+                        このサイトについて
                     </a>
                 </p>
             </li>
@@ -69,23 +69,23 @@
         </div>
     </header>
     
-    
     <div class="topimages">
-        <h1>自由研究2023について</h1>
+        <h1>このサイトについて</h1>
     </div>
 
     <div class="main">
-        <p>このサイトは今年行った自由研究を掲載する自由研究Pagesの一つです。</p>
+        <p>このサイトは行った自由研究を掲載する自由研究Pagesの一つです。</p>
         <h1>画像について</h1>
         <p>画像は引用以外でコピー、ダウンロードしないでください。引用の際は「自由研究2023」のトップにつながるようにリンクを貼ってください。</p>
-        <h1 class="pb">過去の自由研究について</h1>
-        <p>過去の自由研究は新ページと旧ページがあります。旧ページの場合は別の自由研究Pagesへ飛びますので、ライトモードのみとなります。ご注意ください。</p>
+        <h1 class="pb">Cookieの使用について</h1>
+        <p>このサイトでは、「Cookie」を「サイト設定」のフォントサイズ変更内容保存のため、使用しています。<br>
+            その他の用途では使用していません。</p>
         <h1>サイトの更新</h1>
         <p>自由研究Pagesは操作性・視認性の向上、新自由研究の追加で更新されます。</p>
         <h2>自由研究2022からの変更内容</h2>
         <ol>
             <li>
-                印刷対応
+                印刷対応(エラーページを除く。)
             </li>
             <li>
                 ダークモード対応
@@ -94,43 +94,81 @@
                 フォントサイズ、フォントの変更
             </li>
             <li>
+                サイト設定の追加
+            </li>
+            <li>
                 リンクホバー時の動作(本文部のみ)
             </li>
             <li>
-                トップ・過去・関連自由研究ページリンク用フッタースペース
+                関連自由研究ページリンク用フッタースペース
             </li>
             <li>
                 行間、字間の調整
-            </li>
-            <li>
-                ファイル名の拡張子非表示
             </li>
             <li>
                 404エラーページ以外のページの追加
             </li>
         </ol>
     </div>
+
+     <!-- パンくずリスト -->
+     <nav class="breadcrumb" aria-label="現在位置">
+        <ol >
+        <li>
+            <a href="https://minibasepix.github.io/jiyuken/">JiyukenTop</a>＞
+        </li>
+        <li>
+            <a href="index.html">自由研究2023</a>＞
+        </li>
+        <li>
+        <a aria-current="about.html">このサイトについて</a>
+        </li>
+        </ol>
+    </nav>
+
     <footer class="footer">
-      <div class="md-flex md-justify-between">
-        
-        <ul class="footer_navi flex">
-          <li><a href="https://minibasepix.github.io/jiyuken/">自由研究Pagesトップ</a></li>
-          <li><a href="https://minibasepix.github.io/Page001/">自由研究2021</a></li>
-          <li><a href="https://minibasepix.github.io/page002/">自由研究2022</a></li>
-          <li><a href="2023jiyukenkyu.html">今回の自由研究</a></li>
-          <li><a href="https://minibasepix.github.io/jiyuken/jpesm.html">サイトマップ</a></li>
-          <li><a href="https://minibasepix.github.io/jiyukensc">自由研究Pagesソースコード</a></li>
-        </ul>
-      </div>
-      <div class="footer-bottom">
-      <h1 class="footer_logo">自由研究Pages<br class="phbr">&nbsp;自由研究2023</h1><br>
-      <small class="copyright">
-        © 2023 自由研究Pages作成者
-      </small>
-      </div>
-    </footer>
+        <div class="md-flex md-justify-between">
+          <ul class="footer_navi flex">
+            <li><a href="http://minibasepix.github.io/page003/index">ホームページへ行く</a></li><br class="footer_phbr">
+            <li><a href="https://minibasepix.github.io/Page001">自由研究2021</a></li>
+            <li><a href="https://minibasepix.github.io/page002">自由研究2022</a></li><br class="footer_phbr">
+            <li><a href="https://minibasepix.github.io/jiyukensc">ソースコード</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+        <small class="copyright">
+          © 2023 自由研究Pages作成者
+        </small>
+        </div>
+      </footer>
+
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>
+    <!-- パンくずリスト(JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "JiyukenTop",
+                    "item": "https://minibasepix.github.io/jiyuken/"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "自由研究2023",
+                    "item": "https://minibasepix.gituhb.io/page003/index.html"
+                },{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "このサイトについて",
+                    "item": "https://minibasepix.gituhb.io/page003/about.html"
+                }
+            ]
+        }
+    </script>
 </body>
 </html>

@@ -8,3 +8,5 @@ function setHref( $href ) {
   var $elementReference = document.getElementById( "sampleLink" );
   $elementReference.href = $href;
 }
+
+

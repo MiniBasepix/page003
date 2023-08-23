@@ -11,12 +11,18 @@ html,body {
   letter-spacing: 0.05em;
 }
 
+@media screen and (min-width: 724px) {
+.footer_phbr {
+  display: none;
+}
+}
+
 p,b,s,ol {
   font-size: 1.25rem ;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: 300;
 }
 
@@ -24,6 +30,10 @@ h1,h2,h3,h4,h5,h6 {
   margin: 15px 80px;
   padding-top: 0;
   line-height: 1.5;
+}
+
+.main img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1184px) {
@@ -89,8 +99,8 @@ header {
     font-weight: 400;
   }
 
-/*1293px以上の場合*/
-@media screen and (min-width: 1293px) {
+/*1328px以上の場合*/
+@media screen and (min-width: 1328px) {
   header {
     display: flex;
   }
@@ -106,10 +116,10 @@ header {
   }
 }
 
-/*1292px以下の場合*/
+/*1327px以下の場合*/
 
 /* ハンバーガーメニュー(ヘッダー) */
-@media screen and (max-width: 1292px) { 
+@media screen and (max-width: 1327px) { 
   .header_logo {
     margin: 0;
     padding-left: 25px;
@@ -538,6 +548,10 @@ html {
     scrollbar-width: thin;
 }
 
+li {
+  margin: 25px auto;
+}
+
 video {
   text-align: center;
   width: 100%;
@@ -602,3 +616,106 @@ video {
     background: linear-gradient(90deg,#4299af 0%,#5fb1ca,#50b371 100%);
   }
 }
+
+/*pan kuzu list*/
+nav.breadcrumb {
+  padding: 0.25em 1em;
+  background: #c5d0d3;
+}
+nav.breadcrumb ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+}
+
+nav.breadcrumb [aria-current="page"] {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav.breadcrumb {
+    padding: 0.25em 1em;
+    background: #313336;
+  }
+
+  nav.breadcrumb [aria-current="page"] {
+    color: #e9e9e9;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+/*アコーディオン全体*/
+.accordion-area{
+  list-style: none;
+  width: 100%;
+}
+
+.accordion-area section {
+border: 0.5px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.title {
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size:1rem;
+  font-weight: normal;
+  padding: 0.5% 3% 0.5% 50px;
+  transition: all .5s ease;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 3px;
+  background-color: #333;
+  
+}
+.title::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.title::after{    
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before{
+transform: rotate(45deg);
+}
+
+.title.close::after{
+transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+  display: none;/*はじめは非表示*/
+  padding: 2%;
+}
+
+.jiyuken_img {
+  width: 100vw !important;
+}
+
+@media screen and (min-width: 769px) {
+  .jiyuken_img {
+    width: 70% !important;
+  }
+}
+
